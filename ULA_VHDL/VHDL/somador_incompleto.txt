@@ -1,0 +1,22 @@
+library IEEE;
+	use IEEE.std_logic_1164.all;
+	
+	entity somador is port
+	(
+	   A,B : in   std_logic_vector(3 downto 0);  
+	   Y : out  std_logic_vector(3 downto 0)
+	);
+
+	end somador;
+	
+	architecture structural of somador is
+	
+	component antecipador
+	port(A,B : in   std_logic_vector(3 downto 0);  
+	   Y : out  std_logic_vector(3 downto 0);
+	end component;
+
+	begin
+		--- faltando
+	
+	end structural;
