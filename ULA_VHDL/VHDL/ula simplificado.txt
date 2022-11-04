@@ -1,0 +1,31 @@
+library IEEE;
+	use IEEE.std_logic_1164.all;
+	use IEEE.std_logic_unsigned.all;
+	
+	entity ula is port
+	(
+	   A,B         :  in   std_logic_vector(3 downto 0);
+		O      : out   std_logic_vector(3 downto 0);
+		sel    :  in   std_logic_vector(2 downto 0)
+	);
+	end ula;
+	
+	architecture hardware of ula is
+	begin
+	process(A,B,sel)
+	begin
+			case sel is
+			
+			when "000" => O <= A + 1;   				-- somador
+			when "001" => O <= (not A) +1; 				-- inversor
+			when "010" => O <= A - B;   				-- sub
+			when "011" => O <= A+1;   				-- incremento
+			when "100" => O <= A XOR B;     			-- xor
+			when "101" => O <= A AND B;     			-- and
+			when "110" => O <= std_logic_vector(unsigned(A) sll N)  -- lsb
+			when "111" => O <= std_logic_vector(unsigned(A) srl N)  -- rsb
+			
+			end case;
+	end process;
+	
+	end hardware;

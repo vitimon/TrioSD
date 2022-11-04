@@ -1,0 +1,23 @@
+library IEEE;
+	use IEEE.std_logic_1164.all;
+	
+	entity incremento is port
+	(
+	   A   :  in   std_logic_vector(3 downto 0);
+	   Y   : out   std_logic_vector(3 downto 0)
+	);
+
+	end incremento;
+	
+	architecture structural of incremento is
+
+	component somador
+	port(A,B : in std_logic_vector(3 downto 0);
+	     Y   : out std_logic_vector(3 downto 0);
+
+	end component;
+	
+	begin
+		somador port map(A, 1);
+	
+	end structural;

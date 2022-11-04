@@ -1,0 +1,16 @@
+library IEEE;
+	use IEEE.std_logic_1164.all;
+	
+	entity inversor is port
+	(
+	   A   :  in   std_logic_vector(3 downto 0);
+	   O   : out   std_logic_vector(3 downto 0)
+	);
+
+	end inversor;
+	
+	architecture structural of inversor is
+	begin
+		O <= (NOT A) +1;
+	
+	end structural;
