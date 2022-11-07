@@ -1,0 +1,7 @@
+vhdl work "antecipador.vhd"
+vhdl work "somador.vhd"
+vhdl work "inversor.vhd"
+vhdl work "subtrator.vhd"
+vhdl work "lbs.vhd"
+vhdl work "rbs.vhd"
+vhdl work "incremento.vhd"
