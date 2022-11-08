@@ -1,1 +1,3 @@
+vhdl work "antecipador.vhd"
 vhdl work "somador.vhd"
+vhdl work "inversor.vhd"

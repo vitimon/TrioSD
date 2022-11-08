@@ -1,0 +1,43 @@
+V3 31
+FL /home/sd/Downloads/ula/antecipador.vhd 2022/11/08.14:41:45 P.20131013
+EN work/antecipador 1667937165 FL /home/sd/Downloads/ula/antecipador.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/antecipador/Behavioral 1667937166 \
+      FL /home/sd/Downloads/ula/antecipador.vhd EN work/antecipador 1667937165
+FL /home/sd/Downloads/ula/incremento.vhd 2022/11/08.15:38:05 P.20131013
+EN work/incremento 1667937173 FL /home/sd/Downloads/ula/incremento.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/incremento/Behavioral 1667937174 \
+      FL /home/sd/Downloads/ula/incremento.vhd EN work/incremento 1667937173 \
+      CP antecipador
+FL /home/sd/Downloads/ula/inversor.vhd 2022/11/08.17:52:40 P.20131013
+EN work/inversor 1667937169 FL /home/sd/Downloads/ula/inversor.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/inversor/Behavioral 1667937170 \
+      FL /home/sd/Downloads/ula/inversor.vhd EN work/inversor 1667937169 \
+      CP somador
+FL /home/sd/Downloads/ula/lbs.vhd 2022/11/08.15:34:34 P.20131013
+EN work/lbs 1667937175 FL /home/sd/Downloads/ula/lbs.vhd PB ieee/std_logic_1164 1381692176
+AR work/lbs/Behavioral 1667937176 \
+      FL /home/sd/Downloads/ula/lbs.vhd EN work/lbs 1667937175
+FL /home/sd/Downloads/ula/rbs.vhd 2022/11/08.15:34:34 P.20131013
+EN work/rbs 1667937177 FL /home/sd/Downloads/ula/rbs.vhd PB ieee/std_logic_1164 1381692176
+AR work/rbs/Behavioral 1667937178 \
+      FL /home/sd/Downloads/ula/rbs.vhd EN work/rbs 1667937177
+FL /home/sd/Downloads/ula/somador.vhd 2022/11/08.00:57:56 P.20131013
+EN work/somador 1667937167 FL /home/sd/Downloads/ula/somador.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/somador/Behavioral 1667937168 \
+      FL /home/sd/Downloads/ula/somador.vhd EN work/somador 1667937167 \
+      CP antecipador
+FL /home/sd/Downloads/ula/subtrator.vhd 2022/11/08.00:57:56 P.20131013
+EN work/subtrator 1667937171 FL /home/sd/Downloads/ula/subtrator.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/subtrator/Behavioral 1667937172 \
+      FL /home/sd/Downloads/ula/subtrator.vhd EN work/subtrator 1667937171 \
+      CP inversor CP somador
+FL /home/sd/Downloads/ula/ula.vhd 2022/11/08.17:45:57 P.20131013
+EN work/ula 1667937179 FL /home/sd/Downloads/ula/ula.vhd PB ieee/std_logic_1164 1381692176
+AR work/ula/Behavioral 1667937180 \
+      FL /home/sd/Downloads/ula/ula.vhd EN work/ula 1667937179 CP antecipador \
+      CP inversor CP subtrator CP incremento CP somador CP lbs CP rbs

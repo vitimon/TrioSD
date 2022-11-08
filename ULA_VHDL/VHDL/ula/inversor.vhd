@@ -11,8 +11,17 @@ library IEEE;
 	
 	architecture Behavioral of inversor is
 	
-	begin
+	component somador
+		port(A,B : in   std_logic_vector(3 downto 0);  
+			Y : out  std_logic_vector(3 downto 0));
+	end component;
 	
-		Y <= (NOT A); --- faltando somador
+	signal sum: std_logic_vector(3 downto 0); 
+	
+	begin
+		ax: somador port map((not A),"0001",sum);
+	
+	
+		Y <= sum;
 	
 	end Behavioral;

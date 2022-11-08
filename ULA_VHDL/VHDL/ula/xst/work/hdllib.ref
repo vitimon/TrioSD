@@ -1,0 +1,16 @@
+EN lbs NULL /home/sd/Downloads/ula/lbs.vhd sub00/vhpl10 1667937175
+EN subtrator NULL /home/sd/Downloads/ula/subtrator.vhd sub00/vhpl06 1667937171
+EN incremento NULL /home/sd/Downloads/ula/incremento.vhd sub00/vhpl08 1667937173
+EN ula NULL /home/sd/Downloads/ula/ula.vhd sub00/vhpl14 1667937179
+AR subtrator behavioral /home/sd/Downloads/ula/subtrator.vhd sub00/vhpl07 1667937172
+AR incremento behavioral /home/sd/Downloads/ula/incremento.vhd sub00/vhpl09 1667937174
+EN inversor NULL /home/sd/Downloads/ula/inversor.vhd sub00/vhpl02 1667937169
+AR antecipador behavioral /home/sd/Downloads/ula/antecipador.vhd sub00/vhpl01 1667937166
+AR ula behavioral /home/sd/Downloads/ula/ula.vhd sub00/vhpl15 1667937180
+AR rbs behavioral /home/sd/Downloads/ula/rbs.vhd sub00/vhpl13 1667937178
+EN somador NULL /home/sd/Downloads/ula/somador.vhd sub00/vhpl04 1667937167
+AR lbs behavioral /home/sd/Downloads/ula/lbs.vhd sub00/vhpl11 1667937176
+AR somador behavioral /home/sd/Downloads/ula/somador.vhd sub00/vhpl05 1667937168
+AR inversor behavioral /home/sd/Downloads/ula/inversor.vhd sub00/vhpl03 1667937170
+EN rbs NULL /home/sd/Downloads/ula/rbs.vhd sub00/vhpl12 1667937177
+EN antecipador NULL /home/sd/Downloads/ula/antecipador.vhd sub00/vhpl00 1667937165

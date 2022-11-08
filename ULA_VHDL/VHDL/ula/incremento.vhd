@@ -6,7 +6,7 @@ library IEEE;
 				  Y : out  STD_LOGIC_VECTOR (3 downto 0));
 	end incremento;
 
-	architecture Behavioral of somador is
+	architecture Behavioral of incremento is
 
 	component antecipador
 		port(A,B : in   std_logic_vector(3 downto 0);  
@@ -16,7 +16,7 @@ library IEEE;
 	signal Ya: std_logic_vector(3 downto 0); 
 	
 	begin
-		ax: antecipador port map(A,'0001',Ya);
+		ax: antecipador port map(A,"0001",Ya);
 		
 		Y(0) <= A(0) xor '1' xor Ya(0);
 		Y(1) <= A(1) xor '0' xor Ya(1);
@@ -25,4 +25,3 @@ library IEEE;
 	
 
 	end Behavioral;
-

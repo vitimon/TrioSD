@@ -1,0 +1,428 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+Reading design: ula.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ula.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ula"
+Output Format                      : NGC
+Target Device                      : xc3s700an-4-fgg484
+
+---- Source Options
+Top Module Name                    : ula
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/sd/Downloads/ula/antecipador.vhd" in Library work.
+Architecture behavioral of Entity antecipador is up to date.
+Compiling vhdl file "/home/sd/Downloads/ula/somador.vhd" in Library work.
+Architecture behavioral of Entity somador is up to date.
+Compiling vhdl file "/home/sd/Downloads/ula/inversor.vhd" in Library work.
+Entity <inversor> compiled.
+Entity <inversor> (Architecture <behavioral>) compiled.
+Compiling vhdl file "/home/sd/Downloads/ula/subtrator.vhd" in Library work.
+Architecture behavioral of Entity subtrator is up to date.
+Compiling vhdl file "/home/sd/Downloads/ula/incremento.vhd" in Library work.
+Architecture behavioral of Entity incremento is up to date.
+Compiling vhdl file "/home/sd/Downloads/ula/lbs.vhd" in Library work.
+Architecture behavioral of Entity lbs is up to date.
+Compiling vhdl file "/home/sd/Downloads/ula/rbs.vhd" in Library work.
+Architecture behavioral of Entity rbs is up to date.
+Compiling vhdl file "/home/sd/Downloads/ula/ula.vhd" in Library work.
+Architecture behavioral of Entity ula is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ula> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <antecipador> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <inversor> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <subtrator> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <incremento> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <somador> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <lbs> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <rbs> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <inversor> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <antecipador> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <somador> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <antecipador> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ula> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "/home/sd/Downloads/ula/ula.vhd" line 117: Mux is complete : default of case is discarded
+WARNING:Xst:819 - "/home/sd/Downloads/ula/ula.vhd" line 66: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <sum>, <AC>, <inverse>, <sub>, <incr>, <ls>, <rs>
+Entity <ula> analyzed. Unit <ula> generated.
+
+Analyzing Entity <antecipador> in library <work> (Architecture <behavioral>).
+Entity <antecipador> analyzed. Unit <antecipador> generated.
+
+Analyzing Entity <inversor> in library <work> (Architecture <behavioral>).
+Entity <inversor> analyzed. Unit <inversor> generated.
+
+Analyzing Entity <subtrator> in library <work> (Architecture <behavioral>).
+Entity <subtrator> analyzed. Unit <subtrator> generated.
+
+Analyzing Entity <incremento> in library <work> (Architecture <behavioral>).
+Entity <incremento> analyzed. Unit <incremento> generated.
+
+Analyzing Entity <somador> in library <work> (Architecture <behavioral>).
+Entity <somador> analyzed. Unit <somador> generated.
+
+Analyzing Entity <lbs> in library <work> (Architecture <behavioral>).
+Entity <lbs> analyzed. Unit <lbs> generated.
+
+Analyzing Entity <rbs> in library <work> (Architecture <behavioral>).
+Entity <rbs> analyzed. Unit <rbs> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <antecipador>.
+    Related source file is "/home/sd/Downloads/ula/antecipador.vhd".
+WARNING:Xst:647 - Input <A<3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <B<3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <antecipador> synthesized.
+
+
+Synthesizing Unit <lbs>.
+    Related source file is "/home/sd/Downloads/ula/lbs.vhd".
+WARNING:Xst:647 - Input <B<3:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <lbs> synthesized.
+
+
+Synthesizing Unit <rbs>.
+    Related source file is "/home/sd/Downloads/ula/rbs.vhd".
+WARNING:Xst:647 - Input <B<3:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <rbs> synthesized.
+
+
+Synthesizing Unit <incremento>.
+    Related source file is "/home/sd/Downloads/ula/incremento.vhd".
+    Found 4-bit xor2 for signal <Y>.
+Unit <incremento> synthesized.
+
+
+Synthesizing Unit <somador>.
+    Related source file is "/home/sd/Downloads/ula/somador.vhd".
+    Found 4-bit xor3 for signal <Y>.
+    Summary:
+	inferred   4 Xor(s).
+Unit <somador> synthesized.
+
+
+Synthesizing Unit <inversor>.
+    Related source file is "/home/sd/Downloads/ula/inversor.vhd".
+Unit <inversor> synthesized.
+
+
+Synthesizing Unit <subtrator>.
+    Related source file is "/home/sd/Downloads/ula/subtrator.vhd".
+Unit <subtrator> synthesized.
+
+
+Synthesizing Unit <ula>.
+    Related source file is "/home/sd/Downloads/ula/ula.vhd".
+WARNING:Xst:647 - Input <sel> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <seletor> is used but never assigned. This sourceless signal will be automatically connected to value 001.
+WARNING:Xst:653 - Signal <seg> is used but never assigned. This sourceless signal will be automatically connected to value 0100.
+WARNING:Xst:1780 - Signal <Y2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <Y1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <Y0> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 1-bit latch for signal <Y3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Using one-hot encoding for signal <seletor>.
+    Found 1-bit xor2 for signal <F_0$xor0000>.
+    Found 1-bit xor2 for signal <F_0$xor0001>.
+    Found 1-bit xor2 for signal <F_0$xor0002>.
+    Found 1-bit xor2 for signal <F_0$xor0003>.
+    Found 4-bit xor2 for signal <Y$xor0000> created at line 95.
+Unit <ula> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Xors                                                 : 25
+ 1-bit xor2                                            : 8
+ 1-bit xor3                                            : 16
+ 4-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <ax> is unconnected in block <ula>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ab> is unconnected in block <ula>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ad> is unconnected in block <ula>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <s> is unconnected in block <ula>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <af> is unconnected in block <ula>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <ag> is unconnected in block <ula>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 25
+ 1-bit xor2                                            : 8
+ 1-bit xor3                                            : 16
+ 4-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ula> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ula, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ula.ngr
+Top Level Output File Name         : ula
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 19
+
+Cell Usage :
+# BELS                             : 7
+#      GND                         : 1
+#      LUT2                        : 1
+#      LUT3                        : 1
+#      LUT4                        : 4
+# IO Buffers                       : 12
+#      IBUF                        : 4
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s700anfgg484-4 
+
+ Number of Slices:                        3  out of   5888     0%  
+ Number of 4 input LUTs:                  6  out of  11776     0%  
+ Number of IOs:                          19
+ Number of bonded IOBs:                  12  out of    372     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 7.288ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 22 / 7
+-------------------------------------------------------------------------
+Delay:               7.288ns (Levels of Logic = 3)
+  Source:            A<0> (PAD)
+  Destination:       F<0> (PAD)
+
+  Data Path: A<0> to F<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.849   0.851  A_0_IBUF (Y_0_OBUF)
+     LUT2:I0->O            1   0.648   0.420  aa/ax/Mxor_Y<1>_xo<0>1 (Y_1_OBUF)
+     OBUF:I->O                 4.520          Y_1_OBUF (Y<1>)
+    ----------------------------------------
+    Total                      7.288ns (6.017ns logic, 1.271ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.34 secs
+ 
+--> 
+
+
+Total memory usage is 609488 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   18 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

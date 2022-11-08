@@ -1,54 +1,43 @@
-Release 14.2 - xst P.28xd (nt64)
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to C:/Users/cri57/OneDrive/Documentos/TrioSD/ULA_VHDL/VHDL/ula/xst/projnav.tmp
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/sd/Downloads/ula/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.41 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
  
---> Parameter xsthdpdir set to C:/Users/cri57/OneDrive/Documentos/TrioSD/ULA_VHDL/VHDL/ula/xst
+--> 
+Parameter xsthdpdir set to /home/sd/Downloads/ula/xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.41 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
  
---> Reading design: inversor.prj
-
-TABLE OF CONTENTS
-  1) Synthesis Options Summary
-  2) HDL Parsing
-  3) HDL Elaboration
-  4) HDL Synthesis
-       4.1) HDL Synthesis Report
-  5) Advanced HDL Synthesis
-       5.1) Advanced HDL Synthesis Report
-  6) Low Level Synthesis
-  7) Partition Report
-  8) Design Summary
-       8.1) Primitive and Black Box Usage
-       8.2) Device utilization summary
-       8.3) Partition Resource Summary
-       8.4) Timing Report
-            8.4.1) Clock Information
-            8.4.2) Asynchronous Control Signals Information
-            8.4.3) Timing Summary
-            8.4.4) Timing Details
-            8.4.5) Cross Clock Domains Report
-
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
 =========================================================================
-*                          HDL Parsing                                  *
+*                          HDL Compilation                              *
 =========================================================================
-Parsing VHDL file "C:\Users\cri57\OneDrive\Documentos\TrioSD\ULA_VHDL\VHDL\ula\somador.vhd" into library work
-Parsing entity <somador>.
-Parsing architecture <Behavioral> of entity <somador>.
-ERROR:HDLCompiler:806 - "C:\Users\cri57\OneDrive\Documentos\TrioSD\ULA_VHDL\VHDL\ula\somador.vhd" Line 14: Syntax error near "end".
-VHDL file C:\Users\cri57\OneDrive\Documentos\TrioSD\ULA_VHDL\VHDL\ula\somador.vhd ignored due to errors
+Compiling vhdl file "/home/sd/Downloads/ula/antecipador.vhd" in Library work.
+Architecture behavioral of Entity antecipador is up to date.
+Compiling vhdl file "/home/sd/Downloads/ula/somador.vhd" in Library work.
+Architecture behavioral of Entity somador is up to date.
+Compiling vhdl file "/home/sd/Downloads/ula/inversor.vhd" in Library work.
+Entity <inversor> compiled.
+Entity <inversor> (Architecture <behavioral>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
 --> 
 
-Total memory usage is 4491660 kilobytes
 
-Number of errors   :    1 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
+Total memory usage is 565756 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

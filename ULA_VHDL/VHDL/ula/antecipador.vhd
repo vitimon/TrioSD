@@ -17,6 +17,8 @@ library IEEE;
 	Y (2) <= S2;
 	S3 <= ( ( (A (2) and B (2)) or S2) and (A (2) or B(2)));
 	Y(3) <= S3;
+	
+	
 
 	
 	end Behavioral;
